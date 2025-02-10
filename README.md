@@ -1,6 +1,6 @@
 # Supplementary code for "Reduced temporal variability of cortical excitation/inhibition ratio in schizophrenia" by Racz et al. (2025).
 
-This folder contains the complete analysis pipeline for Racz et al. (2025) "Reduced temporal variability of cortical excitation/inhibition ratio in schizophrenia". The scripts reproduce the analysis outcomes and figures published in the article. Specifically,
+This folder contains the complete analysis pipeline for Racz et al. (2025) "Reduced temporal variability of cortical excitation/inhibition ratio in schizophrenia" (DOI: 10.1038/s41537-025-00568-3). The scripts reproduce the analysis outcomes and figures published in the article. Specifically,
 
 - 'script_01_analyze_IRASA_bimodal.m' loads *pre-processed* EEG data and conducts the bimodal IRASA analysis, saving outputs (per participant) into results_IRASA_ec/ 
    as Matlab workspaces.
