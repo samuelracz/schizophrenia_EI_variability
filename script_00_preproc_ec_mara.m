@@ -106,5 +106,5 @@ for subj = 1:ns
     EEG = pop_saveset( EEG, 'filename' ,fname_out, 'filepath', path_to_mara_statistics);
 
     EEG = eeg_checkset( EEG );
-    save([path_to_pre_processed_eeg '/' fname_in(1:end-4) '_MARA.mat'])
+    save([path_to_mara_statistics '/' fname_in(1:end-4) '_MARA.mat'])
 end
