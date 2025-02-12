@@ -54,20 +54,20 @@ for subj = 1:ns
     EEG = eeg_checkset( EEG );
     EEG.setname = '1. raw data (55 ch)';
     
-    %% resample data
-    EEG = pop_resample( EEG, 256);
+    %% segment data (select clean epoch)
+    EEG = pop_select( EEG, 'time',[fnames_ec(subj).start fnames_ec(subj).stop-1/1000] );
     EEG = eeg_checkset( EEG );
-    EEG.setname = '2. downsampled data';
+    EEG.setname = '2. 30s data';
     
     %% high-pass filtering
     EEG = pop_eegfiltnew(EEG, 'locutoff',0.5);
     EEG = eeg_checkset( EEG );
     EEG.setname = '3. after HP';
     
-    %% segment data (select clean epoch)
-    EEG = pop_select( EEG, 'time',[fnames_ec(subj).start fnames_ec(subj).stop-1/1000] );
+    %% resample data
+    EEG = pop_resample( EEG, 256);
     EEG = eeg_checkset( EEG );
-    EEG.setname = '4. 30s data';
+    EEG.setname = '4. downsampled data';
     
     %% filtering (notch + low-pass)
     EEG = pop_eegfiltnew(EEG, 'locutoff',49.5,'hicutoff',50.5,'revfilt',1);
