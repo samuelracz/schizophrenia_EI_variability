@@ -11,7 +11,7 @@ Additionally, 'script_00_preproc_ec_mara.m' provides the means to reproduce the 
 
 Note that the code loads the pre-processed EEG data from Matlab workspaces (in data_ec_mara_avg_256Hz_mat/); however, pre-processed EEG is also provided in .edf format (in data_ec_mara_avg_256Hz/).
 
-**When using this resource, please cite** Racz, F.S., Farkas, K., Becske, M. et al. Reduced temporal variability of cortical excitation/inhibition ratio in schizophrenia. Schizophr 11, 20 (2025). https://doi.org/10.1038/s41537-025-00568-3
+**When using this resource, please cite** Racz, F.S., Farkas, K., Becske, M. *et al*. Reduced temporal variability of cortical excitation/inhibition ratio in schizophrenia. *Schizophr* **11**, 20 (2025). https://doi.org/10.1038/s41537-025-00568-3
 
 Frigyes Samuel Racz
 
