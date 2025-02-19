@@ -7,7 +7,7 @@ This folder contains the complete analysis pipeline for Racz et al. (2025) [Redu
 - 'script_02_statistics_IRASA_bimodal.m' conducts all statistical analyses presented in the article.
 - 'script_03_plot_results.m' re-creates all the figures in the article and its supplementary material.
 
-Additionally, 'script_00_preproc_ec_mara.m' provides the means to reproduce the results from raw EEG data. Raw EEG recordings are available at Zenodo.org in the repository "Resting-state EEG, clinical, and demographics data from schizophrenia patients and age-matched healthy controls" (DOI: 10.5281/zenodo.14808296). The list of included participants and the specific position of the 30s of EEG data selected for analysis is contained in the matlab workspace miscellaneous/fnames_times_ec.mat.
+Additionally, 'script_00_preproc_ec_mara.m' provides the means to reproduce the results from raw EEG data. Raw EEG recordings are available at Zenodo.org in the repository [Resting-state EEG, clinical, and demographics data from schizophrenia patients and age-matched healthy controls](https://zenodo.org/records/14808296) (DOI: 10.5281/zenodo.14808296). The list of included participants and the specific position of the 30s of EEG data selected for analysis is contained in the matlab workspace miscellaneous/fnames_times_ec.mat.
 
 Note that the code loads the pre-processed EEG data from Matlab workspaces (in data_ec_mara_avg_256Hz_mat/); however, pre-processed EEG is also provided in .edf format (in data_ec_mara_avg_256Hz/).
 
